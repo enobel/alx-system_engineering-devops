@@ -1,0 +1,2 @@
+#!/bin/bash
+for i in *.html; do [! -e ../$i] || [$i -nt ../$i] $$ cp $i ..$i; done
